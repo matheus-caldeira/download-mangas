@@ -32,7 +32,7 @@ module.exports = {
 
       const options = {
         url: url,
-        dest: path.resolve(__dirname, 'Mangas',
+        dest: path.resolve(__dirname, '..', '..', 'Mangas',
                     folder, `Chapter-${('000' + (chapter)).slice(-3)}`,
                     `Page-${('000' + (contador+1)).slice(-3)}.png`,),
         extractFilename: false
