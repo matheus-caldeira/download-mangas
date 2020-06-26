@@ -17,7 +17,7 @@ if(type === 'MangaSee'){
       })
     })
   })
-  return console.log('Download concluido.')
+  return console.log('Download em andamento.')
 }else{
   return console.log('Não foi possivel fazer o download.')
 }
