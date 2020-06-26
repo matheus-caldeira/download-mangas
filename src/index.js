@@ -7,12 +7,12 @@ const {url, name, chapterMin, chapterMax, type} = JSON.parse(
     fs.readFileSync(
       path.resolve(__dirname, '..', 'data.json'), 'utf8'))
 
-folder.createFolder(name, chapterMin, chapterMax)
+folder.createFolder(name, chapterMin, (chapterMin+chapterMax))
 
 if(type === 'MangaSee'){
-  mangaSee.getURLS(url, chapterMin, chapterMax).then(urls => {
+  mangaSee.getURLS(url, chapterMin, (chapterMin+chapterMax)).then(urls => {
     urls.map((url, index) => {
-      mangaSee.save(name, (index+1), url).then(res => {
+      mangaSee.save(name, (index+chapterMin), url).then(res => {
         console.log(res)
       })
     })

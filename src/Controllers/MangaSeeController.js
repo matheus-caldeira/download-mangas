@@ -38,7 +38,7 @@ module.exports = {
         extractFilename: false
       } 
 
-      download.image(options)
+      await download.image(options)
     }
 
     await browser.close()
@@ -66,7 +66,7 @@ module.exports = {
         document.querySelector('button.nextBtn').click()
       )
       await navigationPromise
-      await page.waitFor(500)
+      await page.waitFor(2000)
       
       const currentURL = await page.url()
       urls.push(currentURL)
