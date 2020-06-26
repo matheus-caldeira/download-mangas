@@ -1,6 +1,6 @@
 # Donwload-Mangas
 
-Projeto pessoal deselvolvido para fazer download de imagens de mangas em sites gratuidos.
+Projeto pessoal desenvolvido para fazer download de imagens de mangas em sites gratuitos.
 
 ## Inciando
 
@@ -25,11 +25,13 @@ Node
 => Abra o arquivo data.json
 => Edite os seguintes campos:
     --url: link do capitulo para download.
-    --name: Nome do manga.
+    --name: Mome do manga.
     --chapterMin: Numero do capitulo selecionado
     --chapterMax: Quantidade de capitulos a ser baixado
     --type: Dominio onde o manga está hospedado.
 ```
+**ATENÇÃO: SÓ É POSSIVEL FAZER DOWNLOAD DO SITE MANGASEEONLINE POR ENQUANTO**
+
 ### Iniciando o download.
 Execute o comando a seguir dentro da pasta do projeto.
 
@@ -37,10 +39,9 @@ Execute o comando a seguir dentro da pasta do projeto.
 npm start
 ```
 
-**ATENÇÃO: SÓ É POSSIVEL FAZER DOWNLOAD DO SITE MANGASEEONLINE POR ENQUANTO**
 
 ### Exemplo
-O seguinte arquivo data.json vai gerar o download manga The Gamer Capitulo 7 até o capitulo 17.
+O seguinte arquivo data.json vai gerar o download dos capitulos 7 até 17 do manga The Gamer.
 ```
 {
   "url": "https://mangaseeonline.us/read-online/The-Gamer-chapter-7-index-2-page-1.html",
@@ -53,6 +54,5 @@ O seguinte arquivo data.json vai gerar o download manga The Gamer Capitulo 7 at�
 
 
 ## Criado com
-Principais:
 * [puppeteer](https://github.com/puppeteer/puppeteer) - API de alto nível para controlar o Chrome ou o Chromium por meio do protocolo DevTools
 * [image-downloader](https://gitlab.com/demsking/image-downloader) - Download de imagens.
